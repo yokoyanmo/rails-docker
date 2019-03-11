@@ -1,24 +1,32 @@
-# README
+# docker-compose build
+Dockerイメージを構築
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# docker-compose up
+docker-compose.ymlで定義したサービスを起動
 
-Things you may want to cover:
+# docker-compose up -d
+buildしてからupさせる
 
-* Ruby version
+# docker-compose run web rake db:create
+Railsで使用するデータベースを作成
 
-* System dependencies
+# docker-compose ps
+起動しているコンテナを確認
 
-* Configuration
+# docker-compose stop
+起動しているコンテナを停止する
 
-* Database creation
+# docker-compose start
+停止しているコンテナを起動する
 
-* Database initialization
+# docker-compose down
+コンテナを停止し削除する
 
-* How to run the test suite
+# docker images
+イメージの確認
 
-* Services (job queues, cache servers, search engines, etc.)
+# docker rmi イメージID
+イメージを削除する
 
-* Deployment instructions
-
-* ...
+# docker-compose down --rmi all -v
+イメージやボリュームをまとめて削除する
